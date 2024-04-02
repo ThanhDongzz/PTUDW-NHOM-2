@@ -16,15 +16,24 @@ body {
 }
 
 .section__content {
-    margin-top: 60px;
     padding: 0 7px;
+    margin-top: 60px;
 }
 
 .container {
     padding: 0;
 }
 
-
+.page-intro {
+    background-image: url("images/img/Screenshot 2024-03-21 224924.png");
+    /* Thay thế bằng đường dẫn đến ảnh nền của bạn */
+    /*background-color: var(--dark-blue);*/
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+    opacity: 0.9;
+}
 
 .navigation {
     display: flex;
@@ -103,7 +112,9 @@ body {
     transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-
+.fas {
+    margin-right: 7px;
+}
 
 .dash__pad-1 {
     height: 100%;
@@ -179,7 +190,7 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin-bottom: 35px;
-    padding: 30px 40px 20px 40px;
+    padding: 30px 40px 40px 40px;
 }
 
 .dash__h1 {
@@ -202,8 +213,8 @@ body {
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     border: 2px solid #eeeded;
     border-radius: 10px;
-    margin-bottom: 35px;
     padding: 20px 20px 20px 20px;
+    cursor: pointer;
 }
 
 .m-order__get:hover{
@@ -211,23 +222,6 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 0 5px rgba(247, 178, 137, 0.8);
     transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-}
-
-.manage-o__badge {
-    float: right;
-    border-radius: 20px;
-    background-color: #fcd8c8;
-    color: orangered;
-    padding: 7px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-.infor{
-    color: rgb(101, 100, 100);
 }
 
 .container-fluid{
@@ -249,6 +243,120 @@ body {
       font-size:30px;
   }
   }
+
+.table-detail{
+    width: 94%;
+    border: 2px solid #eeeded;
+    border-top: 0;
+    padding: 10px 18px 15px 18px;;
+}
+
+.detail_order{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.infor_o, .total_o{
+    color:rgb(101, 100, 100);
+}
+.infor_o{
+    margin-bottom: 5px;
+}
+.total_o{
+    padding: 5px 0;
+    color: #F26f33;
+    font-weight: bold;
+}
+strong{
+    color:#F26f33;
+}
+
+.address_detail{
+    color: rgb(101, 100, 100);
+}
+
+.quantity-dishes{
+    width: 20%;
+    color: rgb(101, 100, 100);
+}
+
+.quantity-total{
+    width: 20%;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.after-discount__price{
+    color: red;
+}
+
+.total-price{
+    font-size: 18px;
+}
+
+.first-price{
+    font-size: 14px;
+}
+
+.discount-price{
+    font-size: 14px;
+    color: rgb(184, 184, 3);
+}
+
+.manage-o__badge {
+    float: right;
+    border-radius: 20px;
+    background-color: #fcd8c8;
+    color: orangered;
+    padding: 7px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.infor{
+    color: rgb(101, 100, 100);
+}
+
+@media screen and (max-width: 768px){
+    .dash__pad-2{
+        padding:15px 5px 15px 5px;
+    }
+    .body{
+        font-size:15px;
+    }
+    .dash__h1{
+        padding-left: 15px;
+        padding-top:15px
+    }
+    label{
+        padding-left: 15px;
+    }
+    .quantity-dishes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .before-discount{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .after-discount__price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .quantity-total{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .infor_o{
+        margin-bottom: 7px;
+    }
+}
 
 :root {
     --dark-blue: #005F69;
